@@ -93,7 +93,7 @@ img {
 nav {
   display: flex;
   align-items: center;
-  gap: clamp(18px, 2.4vw, 34px);
+  gap: clamp(14px, 1.9vw, 28px);
   color: rgba(247, 242, 233, 0.78);
   font-size: 0.78rem;
 }
@@ -107,6 +107,10 @@ nav a:hover {
   color: var(--ivory);
 }
 
+nav a[aria-current="page"] {
+  color: var(--ivory);
+}
+
 .header-action {
   justify-self: end;
   border-bottom: 1px solid rgba(247, 242, 233, 0.62);
@@ -117,6 +121,10 @@ nav a:hover {
 .header-action:hover {
   color: var(--ivory);
   border-color: var(--ivory);
+}
+
+.inner-header {
+  background: rgba(11, 29, 48, 0.94);
 }
 
 .hero {
@@ -250,6 +258,70 @@ h3 {
   text-align: center;
 }
 
+.page-main {
+  padding-top: 82px;
+}
+
+.page-section h1,
+.process-page h1,
+.contact-page h1 {
+  max-width: 980px;
+  font-size: clamp(2.8rem, 5.5vw, 5.9rem);
+}
+
+.page-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+  background: var(--ivory);
+}
+
+.page-links a {
+  display: flex;
+  min-height: 220px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: clamp(24px, 3vw, 38px);
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  transition: background 180ms ease, color 180ms ease;
+}
+
+.page-links a:hover {
+  background: var(--sage);
+  color: var(--ivory);
+}
+
+.page-links span {
+  color: var(--wood);
+  font-family: var(--serif);
+  font-size: 1.35rem;
+}
+
+.page-links a:hover span,
+.page-links a:hover small {
+  color: rgba(247, 242, 233, 0.78);
+}
+
+.page-links strong {
+  display: block;
+  margin-top: auto;
+  font-family: var(--serif);
+  font-size: clamp(2rem, 3vw, 3.1rem);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.page-links small {
+  display: block;
+  max-width: 280px;
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
 .split-section,
 .services,
 .resources,
@@ -299,6 +371,10 @@ h3 {
   font-size: 1.35rem;
 }
 
+.service-list h2 {
+  font-size: clamp(1.85rem, 3vw, 2.7rem);
+}
+
 .service-list p,
 .steps p,
 .space-copy p,
@@ -311,6 +387,12 @@ h3 {
   padding: clamp(78px, 10vw, 142px) clamp(20px, 5vw, 70px);
   background: var(--navy);
   color: var(--ivory);
+}
+
+.process-page,
+.contact-page {
+  min-height: calc(100vh - 74px);
+  padding-top: clamp(130px, 14vw, 190px);
 }
 
 .process-inner {
@@ -494,7 +576,8 @@ footer {
   }
 
   .steps,
-  .resource-list {
+  .resource-list,
+  .page-links {
     grid-template-columns: 1fr;
   }
 
@@ -549,6 +632,14 @@ footer {
 
   .resource-list a {
     min-height: 126px;
+  }
+
+  .page-main {
+    padding-top: 66px;
+  }
+
+  .page-links a {
+    min-height: 158px;
   }
 
   footer {
