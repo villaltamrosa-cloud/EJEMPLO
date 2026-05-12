@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 96" role="img" aria-labelledby="title">
+  <title id="title">Hartxoa Psicología</title>
+  <defs>
+    <style>
+      .bg { fill: none; }
+      .line { fill: none; stroke: #d9c8ae; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+      .fine { fill: none; stroke: #d9c8ae; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; }
+      .text { fill: #f7f2e9; font-family: Georgia, "Times New Roman", serif; font-size: 47px; letter-spacing: 2px; }
+      .sub { fill: #d9c8ae; font-family: Arial, sans-serif; font-size: 11px; letter-spacing: 8px; }
+    </style>
+  </defs>
+  <rect class="bg" width="360" height="96" />
+  <circle class="line" cx="49" cy="48" r="34" />
+  <path class="line" d="M49 73V34" />
+  <path class="fine" d="M49 45c-8-12-19-15-27-15M49 45c8-12 19-15 27-15" />
+  <path class="fine" d="M49 50c-10-6-21-4-28 2M49 50c10-6 21-4 28 2" />
+  <path class="fine" d="M49 56c-8 2-15 7-20 14M49 56c8 2 15 7 20 14" />
+  <path class="fine" d="M49 39c-4-7-4-14 0-20M49 39c4-7 4-14 0-20" />
+  <path class="fine" d="M36 34l-5-8M62 34l5-8M34 48l-9-2M64 48l9-2M40 59l-7 5M58 59l7 5" />
+  <text class="text" x="102" y="49">Hartxoa</text>
+  <path class="fine" d="M105 67h38M270 67h38" />
+  <text class="sub" x="154" y="71">PSICOLOGIA</text>
+</svg>
