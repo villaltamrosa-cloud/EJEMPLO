@@ -507,6 +507,36 @@ h3 {
   color: rgba(247, 242, 233, 0.74);
 }
 
+.booking-options {
+  display: grid;
+  width: 100%;
+  gap: 14px;
+}
+
+.booking-options article {
+  padding: 24px;
+  border: 1px solid rgba(247, 242, 233, 0.18);
+  background: rgba(247, 242, 233, 0.06);
+}
+
+.booking-options span {
+  display: block;
+  margin-bottom: 14px;
+  color: var(--beige);
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.booking-options h2 {
+  font-size: clamp(2rem, 3.5vw, 2.9rem);
+}
+
+.booking-options p {
+  margin: 14px 0 22px;
+}
+
 .text-link {
   border-bottom: 1px solid rgba(247, 242, 233, 0.44);
   color: rgba(247, 242, 233, 0.82);
